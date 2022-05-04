@@ -1,0 +1,60 @@
+.thanking {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkBlue;
+    padding: 3.5rem 1.75rem;
+    border-radius: 2.5rem;
+    width: 25%;
+    display: none;
+    img {
+        margin-top: 1.5rem;
+    }
+
+    &-rate {
+        margin: 3rem 0;
+        color: $orange;
+        padding: .75rem 2rem .5rem 2rem;
+        background-color: $lightDarkBlue;
+        border-radius: 5rem;
+    }
+
+    &-big{
+        font-size: 2.55rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        
+    }
+
+    &-par{
+        margin: 2rem;
+        text-align: center;
+        padding-left: .5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .thanking {
+      width: 35%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .thanking {
+      width: 45%;
+    }
+  }
+  @media (max-width: 425px) {
+    .thanking {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 325px) {
+    .thanking {
+      width: 95%;
+    }
+  }
+  

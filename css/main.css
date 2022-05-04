@@ -2,76 +2,193 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+  box-sizing: border-box;
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
+html {
+  font-size: 62.5%;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
+.rating {
+  background-color: #252d37;
+  padding: 3.5rem;
+  border-radius: 2.5rem;
+  width: 25%;
 }
 
-/* Set core body defaults */
+.rating-img {
+  display: inline-block;
+  padding: 2.25rem;
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+  background-color: #2d3743;
+  border-radius: 49%;
+  position: relative;
+}
+
+.rating-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rating-title {
+  font-size: 2.5rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.rating-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 2rem 0;
+}
+
+.rating-numbers-numb {
+  cursor: pointer;
+  background-color: #2d3743;
+  color: #959eac;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-numbers-numb:hover {
+  color: white;
+  background-color: #fb7413;
+}
+
+.rating-numbers-numb:focus {
+  color: white;
+  background-color: #7c8798;
+}
+
+.rating-btn {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: #fb7413;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.rating-btn:hover {
+  color: #fb7413;
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .rating {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rating {
+    width: 45%;
+  }
+}
+
+@media (max-width: 425px) {
+  .rating {
+    width: 80%;
+  }
+}
+
+@media (max-width: 325px) {
+  .rating {
+    width: 95%;
+  }
+}
+
+.thanking {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252d37;
+  padding: 3.5rem 1.75rem;
+  border-radius: 2.5rem;
+  width: 25%;
+  display: none;
+}
+
+.thanking img {
+  margin-top: 1.5rem;
+}
+
+.thanking-rate {
+  margin: 3rem 0;
+  color: #fb7413;
+  padding: .75rem 2rem .5rem 2rem;
+  background-color: #2d3743;
+  border-radius: 5rem;
+}
+
+.thanking-big {
+  font-size: 2.55rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.thanking-par {
+  margin: 2rem;
+  text-align: center;
+  padding-left: .5rem;
+}
+
+@media (max-width: 1024px) {
+  .thanking {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .thanking {
+    width: 45%;
+  }
+}
+
+@media (max-width: 425px) {
+  .thanking {
+    width: 80%;
+  }
+}
+
+@media (max-width: 325px) {
+  .thanking {
+    width: 95%;
+  }
+}
+
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121417;
+  font-family: 'Overpass', sans-serif;
+  color: white;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+p {
+  font-size: 1.4rem;
+  color: #959eac;
 }

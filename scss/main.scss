@@ -1,1 +1,23 @@
 @import "reset";
+@import "variables";
+@import "rating";
+@import "thanks";
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $veryDarkBlue;
+    font-family: 'Overpass', sans-serif;
+    color: $white;
+    line-height: 1.5;
+    
+}
+
+
+
+p{
+      font-size: 1.4rem;
+      color: $lightGrey;
+}
